@@ -1,4 +1,5 @@
 {
+  "name": "node-barcode-generator",
   "version": "1.0.0",
   "dependencies": {
     "canvas": "^2.8.0",
