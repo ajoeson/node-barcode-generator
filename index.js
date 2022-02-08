@@ -7,7 +7,7 @@ class NodeBarcodeGenerator {
   }
 
   barcodeToBuffer(data) {
-    JsBarcode(this.canvas, data);
+    JsBarcode(this.canvas, data).options({font: "OCR-B"});
     const buffer = this.canvas.toBuffer("image/png");
     // require("fs").writeFileSync(`./${data}.png`, buffer);
     return buffer;
